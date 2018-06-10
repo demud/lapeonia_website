@@ -12,10 +12,10 @@
 
 <body>
     <header>
-        <nav>
+        <nav id="main">
             <a href="index.html" title="La Peonia"><img src="img/logo.jpg" alt="Лого"></a>
             <ul>
-                <li><a href="index.html">Головна</a></li>
+                <li><a href="#main">Головна</a></li>
                 <li><a href="#bouquets">Букети</a></li>
                 <li><a href="#delivery&payment">Доставка та оплата</a></li>
                 <li><a href="#contacts">Контакти</a></li>
@@ -42,27 +42,27 @@
             <p>Ми вкладаємо в наші букети всі свої почуття і вміння, тому вони просто не зможуть залишити байдужим нікого, хто хоч раз доторкнеться до чарівного світу справжньої квіткової моди. Світу La Peonia.</p>
             <div class="grid">
             <article>
-                <img src="img/bouquet_blue.jpg" alt="Букет" title="Букет №533">
+                <img src="img/bouquet_blue.jpg" alt="Букет №1" title="Букет №1">
                 <h4>Букет №1</h4>
             </article>
             <article>
-                <img src="img/bouquet_pink.jpg" alt="Букет" title="Букет №532">
+                <img src="img/bouquet_pink.jpg" alt="Букет №2" title="Букет №2">
                 <h4>Букет №2</h4>
             </article>
             <article>
-                <img src="img/bouquet_in_box.jpg" alt="Букет" title="Букет №524">
+                <img src="img/bouquet_in_box.jpg" alt="Букет №3" title="Букет №3">
                 <h4>Букет №3</h4>
             </article>
             <article>
-                <img src="img/bouquet.jpg" alt="Букет" title="Букет №457">
+                <img src="img/bouquet.jpg" alt="Букет №4" title="Букет №4">
                 <h4>Букет №4</h4>
             </article>
             <article>
-                <img src="img/bouquet_orange.jpg" alt="Букет" title="Букет №477">
+                <img src="img/bouquet_orange.jpg" alt="Букет №5" title="Букет №5">
                 <h4>Букет №5</h4>
             </article>
             <article>
-                <img src="img/bouquet_pink_with_white.jpg" alt="Букет" title="Букет №483">
+                <img src="img/bouquet_pink_with_white.jpg" alt="Букет №6" title="Букет №6">
                 <h4>Букет №6</h4>
             </article>
             </div>
@@ -105,31 +105,49 @@
             style="border:0" allowfullscreen class="map"></iframe>
         </article>
         <div class="form">
-            <h3>Зворотній зв'язок:</h3>
+            <h2>Зворотній зв'язок:</h2>
             <form method="POST" action="https://formspree.io/demudt@gmail.com">
-                <label>Ваше ім'я:
-                <input type="text" placeholder="Ім'я" name="client-name" required>
-                </label>
-                <br>
-                <label>Ваш Email:
-                <input type="email" placeholder="E-mail" name="client-email" required>
-                </label>
-                <br>
-                <label>Ваше повідомлення:
-                <textarea placeholder="Повідомлення" name="message" required></textarea>
-                </label>
-                <br>
-                <input type="submit" value="Надіслати">
+                <div class="row">
+                    <div class="col-25">
+                <label for="name">Ваше ім'я:</label>
+                    </div>
+                    <div class="col-75">
+                <input type="text" id="name" placeholder="Ім'я:" name="client-name" required class="col-75">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                <label for="email">Ваш Email:</label>
+                    </div>
+                    <div class="col-75">
+                <input type="email" id="email" placeholder="E-mail:" name="client-email" required class="col-75">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="message">Ваше повідомлення:</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="message" placeholder="Повідомлення:" name="message" required></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Надіслати">
+                </div>
             </form>
         </div>
     </main>
     <footer>
-        <img src="img/footer.jpg" alt="Фон з квітами">
-        <br>
-        <a href="https://www.instagram.com/explore/locations/562762942/la-peonia-floristic-atelier/" target="_blank"><img src="img/instagram.png" alt="Instagram" title="Instagram"></a>
-        <a href="https://www.facebook.com/pages/La-Peonia-Floristic-Atelier/417933375012425" target="_blank"><img src="img/facebook.png" alt="Facebook" title="Facebook"></a>
-        <a href="https://plus.google.com/discover" target="_blank"><img src="img/google-plus.png" alt="Google+" title="Google+"></a>
-        <p>© 2018 La Peonia. Всі права захищені </p>
+        <ul class="social-icons">
+            <li><a href="https://www.instagram.com/explore/locations/562762942/la-peonia-floristic-atelier/" target="_blank"><img src="img/instagram.png" alt="Instagram" title="Instagram"></a></li>
+            <li><a href="https://www.facebook.com/pages/La-Peonia-Floristic-Atelier/417933375012425" target="_blank"><img src="img/facebook.png" alt="Facebook" title="Facebook"></a></li>
+            <li><a href="https://plus.google.com/discover" target="_blank"><img src="img/google-plus.png" alt="Google+" title="Google+"></a></li>
+        </ul>    
+        <div>
+            <span>© 2018 La Peonia. Всі права захищені </span>
+            <br>
+            <a href="#main">Вгору сторінки</a>
+        </div>
     </footer>
 </body>
 
